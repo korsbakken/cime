@@ -1015,6 +1015,20 @@
       <grid name="wav">ww3a</grid>
     </model_grid>
 
+    <model_grid alias="cic0.5res_t02">
+      <grid name="atm">cic0.5res</grid>
+      <grid name="lnd">cic0.5res</grid>
+      <grid name="ocnice">tx0.1v2</grid>
+      <mask>tx0.1v2</mask>
+    </model_grid>
+
+    <model_grid alias="Fennoscandia0.05x0.1">
+      <grid name="atm">Fennoscandia0.05x0.1</grid>
+      <grid name="lnd">Fennoscandia0.05x0.1</grid>
+      <grid name="ocnice">gx1v6</grid>
+      <mask>usgs</mask>
+    </model_grid>
+
   </grids>
 
   <!-- ======================================================== -->
