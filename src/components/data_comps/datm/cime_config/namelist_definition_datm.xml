@@ -279,7 +279,7 @@
       <value stream="CLM_QIAN_WISO">domain.T62.050609.nc</value>
       <value stream="CLMCRUNCEPv7">domain.lnd.360x720_cruncep.130305.nc</value>
       <!-- JIK added 2020-12-20  -->
-      <value stream="CLMCRUJRA2v1">domain.lnd.360x720_cruncep.130305.nc</value>
+      <value stream="CLMCRUJRA2v1">domain.lnd.360x720_cruncep.100429.nc</value>
       <!-- END JIK added 2020-12-20 -->
       <value stream="CLMCRUNCEP">domain.lnd.360x720.130305.nc</value>
       <value stream="CLMGSWP3v1">domain.lnd.360x720_gswp3.0v1.c170606.nc</value>
