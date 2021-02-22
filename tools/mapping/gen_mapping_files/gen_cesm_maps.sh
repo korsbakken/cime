@@ -114,7 +114,7 @@ make_map() {
     run_serial=""
   fi
   $make_map_exe -fsrc $fsrc -nsrc $nsrc -fdst $fdst -ndst $ndst  \
-                -tsrc $tsrc -tdst $tdst -map $map $run_serial   || exit $?
+                -tsrc $tsrc -tdst $tdst -big -map $map $run_serial   || exit $?
 }
 
 #===============================================================================

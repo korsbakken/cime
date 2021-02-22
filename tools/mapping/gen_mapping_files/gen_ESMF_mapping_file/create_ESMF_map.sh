@@ -227,8 +227,10 @@ if [ $MACH == "UNSET" ]; then
       MACH="dav"
     ;;
     *)
-      echo "Can not determine machine name from hostname '$hostname'"
-      exit 1
+      # JIK 2021-02-22: Set fram as default machine
+      # echo "Can not determine machine name from hostname '$hostname'"
+      # exit 1
+      MACH="fram"
     ;;
   esac
 fi
@@ -338,8 +340,12 @@ case $MACH in
     module load nco
   ;;
   *)
-    echo "Machine $MACH NOT recognized"
-    exit
+    # JIK 2021-02-22: Modified file to just ignore an unrecognized machine.
+    # Instead allow the script to run and assume that envionment variables
+    # have been set correctly and module loaded manually.
+    #
+    # echo "Machine $MACH NOT recognized"
+    # exit
   ;;
 esac
 
