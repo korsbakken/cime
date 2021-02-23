@@ -435,7 +435,7 @@ contains
             nj = src_grid_dims(2)
          end if
          write(6,*) 'create ',trim(fn_out)
-         call check_ret(nf_create(fn_out(1:len_trim(fn_out)),NF_CLOBBER,fid))
+         call check_ret(nf_create(fn_out(1:len_trim(fn_out)),NF_CLOBBER .OR. NF_64BIT_OFFSET,fid))
          write(6,*) 'write ',trim(fn_out)
          call write_file(fid, fmap, units_xc, units_yc, n, ni, nj, nv, &
               xc, yc, xv, yv, area, omask, ofrac, suffix, eps, pole_fix, &
@@ -447,7 +447,7 @@ contains
             ni = dst_grid_dims(1)
             nj = dst_grid_dims(2)
          end if
-         call check_ret(nf_create(fn_out_lnd(1:len_trim(fn_out_lnd)),NF_CLOBBER,fid))
+         call check_ret(nf_create(fn_out_lnd(1:len_trim(fn_out_lnd)),NF_CLOBBER .OR. NF_64BIT_OFFSET,fid))
          write(6,*) 'write ',trim(fn_out_lnd)
          call write_file(fid, fmap, units_xc, units_yc, n, ni, nj, nv, &
               xc, yc, xv, yv, area, lmask, lfrac, suffix, eps, pole_fix, &
@@ -455,7 +455,7 @@ contains
          call check_ret(nf_close(fid))
          write(6,*) 'successfully created domain file ', trim(fn_out_lnd)
 
-         call check_ret(nf_create(fn_out_ocn(1:len_trim(fn_out_ocn)),NF_CLOBBER,fid))
+         call check_ret(nf_create(fn_out_ocn(1:len_trim(fn_out_ocn)),NF_CLOBBER .OR. NF_64BIT_OFFSET,fid))
          write(6,*) 'write ',trim(fn_out_ocn)
          call write_file(fid, fmap, units_xc, units_yc, n, ni, nj, nv, &
               xc, yc, xv, yv, area, omask, ofrac, suffix, eps, pole_fix, &
