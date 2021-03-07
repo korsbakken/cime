@@ -1111,6 +1111,14 @@
       <desc>Exact half-degree CRUNCEP datm forcing grid with CRUNCEP land-mask -- only valid for DATM/CLM compset</desc>
     </domain>
 
+    <!-- JIK 2021-03-07: Added domain for Fennoscandia0.05x0.1 -->
+    <domain name="Fennoscandia0.05x0.1">
+      <nx>280</nx> <ny>340</ny>
+      <file grid="atm|lnd">$DIN_LOC_ROOT/cicero_mods/share/domains/domain.lnd.Fennoscandia0.05x0.1_3minx3min.210224.nc</file>
+      <desc>Roughly 5km regional grid for Fennoscandia -- only valid for DATM/CLM compset</desc>
+    </domain>
+    <!-- END JIK 2021-03-07 -->
+
     <domain name="0.23x0.31">
       <nx>1152</nx> <ny>768</ny>
       <file grid="atm|lnd" mask="gx1v6">domain.lnd.fv0.23x0.31_gx1v6.100517.nc</file>
