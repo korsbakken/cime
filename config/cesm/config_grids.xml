@@ -1950,6 +1950,14 @@
 
     <!--- river to land and land to river mapping files    -->
 
+    <!-- JIK 2021-03-09: Added river/land mapping files for r05 grid and Fennoscandia0.05x0.1 -->
+    <!-- Given the high resolution of Fennoscandia0.05x0.1, we should probably be using a r01 grid for RTM -->
+    <gridmap lnd_grid="Fennoscandia0.05x0.1" rof_grid="r05">
+      <map name="LND2ROF_FMAPNAME">cicero_mods/lnd/clm2/mappingdata/maps/0.5x0.5/map_Fennoscandia0.05x0.1_nomask_TO_0.5x0.5_nomask_aave.210309.nc</map>
+      <map name="ROF2LND_FMAPNAME">cicero_mods/lnd/clm2/mappingdata/maps/Fennoscandia0.05x0.1/map_0.5x0.5_nomask_TO_Fennoscandia0.05x0.1_nomask_aave.210309.nc</map>
+    </gridmap>
+    <!-- END JIK 2021-03-09 -->
+
     <gridmap lnd_grid="360x720cru" rof_grid="r01">
       <map name="LND2ROF_FMAPNAME">lnd/clm2/mappingdata/maps/0.1x0.1/map_360x720_nomask_to_0.1x0.1_nomask_aave_da_c130107.nc</map>
       <map name="ROF2LND_FMAPNAME">lnd/clm2/mappingdata/maps/360x720/map_0.1x0.1_nomask_to_360x720_nomask_aave_da_c130104.nc</map>
@@ -2168,6 +2176,15 @@
     <!-- ====================  -->
     <!-- GLC: gland4           -->
     <!-- ====================  -->
+
+    <!-- JIK 2021-03-09: Added Fennoscandia0.05x0.1 to gland4 mapping -->
+    <gridmap lnd_grid="Fennoscandia0.05x0.1" glc_grid="gland4" >
+      <map name="LND2GLC_FMAPNAME">cicero_mods/cpl/gridmaps/Fennoscandia0.05x0.1/map_Fennoscandia0.05x0.1_nomask_TO_gland4_nomask_aave.210309.nc</map>
+      <map name="LND2GLC_SMAPNAME">cicero_mods/cpl/gridmaps/Fennoscandia0.05x0.1/map_Fennoscandia0.05x0.1_nomask_TO_gland4_nomask_blin.210309.nc</map>
+      <map name="GLC2LND_FMAPNAME">cicero_mods/cpl/gridmaps/gland4/map_gland4_nomask_TO_Fennoscandia0.05x0.1_nomask_aave.210309.nc</map>
+      <map name="GLC2LND_SMAPNAME">cicero_mods/cpl/gridmaps/gland4/map_gland4_nomask_TO_Fennoscandia0.05x0.1_nomask_aave.210309.nc</map>
+    </gridmap>
+    <!-- END JIK 2021-03-09 -->
 
     <gridmap lnd_grid="0.47x0.63" glc_grid="gland4" >
       <map name="LND2GLC_FMAPNAME">cpl/gridmaps/fv0.47x0.63/map_fv0.47x0.63_TO_gland4km_aave.171105.nc</map>
