@@ -1,0 +1,2 @@
+Could not find machine match for 'login1.fram.sigma2.no' or 'login-1-1.fram.sigma2.no'
+ERROR: Could not initialize machine object from /cluster/home/janko/cesm/cesm2.1.2-git/cime/config/cesm/machines/config_machines.xml or /cluster/home/janko/.cime/config_machines.xml
